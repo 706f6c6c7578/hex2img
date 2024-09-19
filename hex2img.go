@@ -48,7 +48,7 @@ func main() {
 
 func printUsage() {
 	fmt.Fprintf(os.Stderr, "Usage of %s:\n", os.Args[0])
-	fmt.Fprintln(os.Stderr, "  Encode: cat hexfile.txt | "+filepath.Base(os.Args[0])+" [-b blocks_per_row] [-v] > output.png/svg")
+	fmt.Fprintln(os.Stderr, "  Encode: cat hexfile.txt | "+filepath.Base(os.Args[0])+" -b blocks_per_row [-v] > output.png/svg")
 	fmt.Fprintln(os.Stderr, "  Decode: cat input.png/svg | "+filepath.Base(os.Args[0])+" -d [-v] > output.txt")
 	fmt.Fprintln(os.Stderr, "\nOptions:")
 	flag.PrintDefaults()
